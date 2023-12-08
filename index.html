@@ -4,6 +4,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://www.nationsonline.org/gallery/Sri_Lanka/Sigiriya-Sri-Lanka.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+    
 body {
   font-family: "Lato", sans-serif;
 }
@@ -214,12 +258,18 @@ function closeNav() {
 }
 </script>
     
-<div class="header">
+<! --<div class="header">
     <p id="home"></p>
   <h1>A Sri Lanka Travel Guide</h1>
+</div>-->
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h2>Blurred Background</h2>
+  <h1 style="font-size:50px">I am John Doe</h1>
+  <p>And I'm a Photographer</p>
 </div>
-
-
   
 <p>Sri Lanka's holidays allow you to indulge in an incredible combination of spectacular landscapes, golden beaches, ancient edifices, and pulsating nightlife. Also known as the ‘Teardrop of India’, the island country draws you to admire its serenity and pristine beauty.</p>
 <p class="intro"> Also when you are going to <strong>any</strong> of these locations, pack a few items you will necessarily need to bring some snacks, a water bottle and a camera (if you want to take pictures of these beautiful places).</p>
