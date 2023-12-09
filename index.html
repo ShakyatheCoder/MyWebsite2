@@ -3,7 +3,46 @@
     <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+    
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.natgeofe.com/n/d6bd5cdc-528f-4887-9cc3-3fb4e10d6651/sri-lanka-travel_16x9.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
     
 .sidenav {
   height: 100%;
@@ -193,10 +232,7 @@ background: radial-gradient(circle, rgba(2,91,25,1) 0%, rgba(10,90,0,1) 100%);
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="#">About the Editor</a>
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">👤</span>
@@ -210,6 +246,14 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">A Sri Lanka Travel Guide</h1>
+    <p></p>
+    <button></button>
+  </div>
+</div>    
     
 <! --<div class="header">
     <p id="home"></p>
