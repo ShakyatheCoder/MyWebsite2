@@ -3,7 +3,63 @@
     <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+    
 .sidenav {
   height: 100%;
   width: 0;
@@ -192,7 +248,7 @@ background: radial-gradient(circle, rgba(2,91,25,1) 0%, rgba(10,90,0,1) 100%);
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About the Editor</a>
+  <a href="#">Editor</a>
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">👤</span>
@@ -338,6 +394,20 @@ a:hover, a:active {
 <a href="https://www.largeminority.travel/srilanka-Tuk-Tuk-Adventure/" target="_blank" id="borderimg3">Find your Tuk Tuk ride on Tuk Tuk Adventure!</a><br><br>
 <a href="https://www.tripadvisor.com/Attractions-g293961-Activities-c42-t75-Sri_Lanka.html" target="_blank" id="borderimg3">Find your train ride on TripAdvisor!</a><br><br>
 <a href="#home" target="" id="borderimg3">Go back to the top.</a>
+<br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Shakya Kumarage</h2>
+        <p class="title">Editor & Creator</p>
+        <p>Hi! This is the creator of this website, Shakya Kumarage. I made this website as I felt like many people think that Sri Lanka is a major atraction for tourists. But people need to learn more about the island
+        to plan a visit there. So, I made this website to show everyon the way to chill in Sri Lanka!</p>
+        <p>sk9157@student.st-chris.net</p>
+      </div>
+    </div>
+  </div>
 </div>
 </body>
 </html>
