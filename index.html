@@ -4,6 +4,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -246,6 +276,11 @@ background: radial-gradient(circle, rgba(2,91,25,1) 0%, rgba(10,90,0,1) 100%);
 </ul>
 <div class="content">
 
+<div id="navbar">
+  <a href="#home">Go to top</a>
+  <a href="#bottom">Go to bottom</a>
+</div>
+    
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#editor">Editor</a>
@@ -311,7 +346,6 @@ Hotels to visit
 <p>Any how, a main thing to worry about is <strong>transport.</strong> Well, Sri Lanka's got you covered! You can easily
     take a tuk tuk adventure around Sri Lanka. For more information, go to the bottom of the page. Or you can take a train ride
 through the lands of Sri Lanka. Info this is also included below.</p><br>
-<a href="#bottom" target="" id="borderimg3>Go to the bottom.</a>
  <iframe src="https://giphy.com/embed/gf1uEV1T001x4st0bm" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/caravan-campervan-messe-wels-gf1uEV1T001x4st0bm"></a></p>
 <p id="places">Now you've got transport settled and you're in a nice cozy hotel, time to explore! In Sri Lanka, there are many
 places to expolre to. For your refence, the top 5 places put below are not ranked in a peticular order.</p>
